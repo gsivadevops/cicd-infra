@@ -8,12 +8,12 @@ variable "environment" {
 
 variable "zone_name" {
   type        = string
-  default     = "daws84s.site"
+  default     = "devopslearning.store"
   description = "description"
 }
 
 variable "zone_id" {
   type        = string
-  default     = "Z01894583A5LLRAMEST3A"
+  default     = "Z02979802YJHT5DLYSTHT"
   description = "description"
 }
