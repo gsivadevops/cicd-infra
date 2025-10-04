@@ -35,7 +35,7 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 chmod 700 get_helm.sh
 ./get_helm.sh
 
-
+# Kubectl
 ARCH=amd64
 PLATFORM=$(uname -s)_$ARCH
 curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
@@ -49,5 +49,9 @@ mv kubectl /usr/local/bin/kubectl
 eksctl version
 kubectl version
 
+# Kubens
 git clone https://github.com/ahmetb/kubectx /opt/kubectx
 ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+
+# k9s
+curl -sS https://webinstall.dev/k9s | bash
